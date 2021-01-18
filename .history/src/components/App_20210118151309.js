@@ -33,12 +33,12 @@ class App extends Component {
     });
   }
 
-  // componentWillUpdate() {
-  //   localStorage.setItem(
-  //     this.props.match.params.storeId,
-  //     JSON.stringify(this.state.order)
-  //   );
-  // }
+  componentWillUpdate() {
+    localStorage.setItem(
+      this.props.match.params.storeId,
+      JSON.stringify(this.state.order)
+    );
+  }
 
   componentWillUnmount() {
     base.removeBinding(this.ref);

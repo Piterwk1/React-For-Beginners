@@ -6,11 +6,11 @@ const firebaseApp = firebase.initializeApp({
   authDomain: 'catch-of-the-day-piotrwk-36eb1.firebaseapp.com',
   databaseURL:
     'https://catch-of-the-day-piotrwk-36eb1-default-rtdb.firebaseio.com',
-  // projectId: 'catch-of-the-day-piotrwk-36eb1',
-  // storageBucket: 'catch-of-the-day-piotrwk-36eb1.appspot.com',
-  // messagingSenderId: '1058978518802',
-  // appId: '1:1058978518802:web:d71729cfb839c27e71c5cb',
-  // measurementId: 'G-G0EXED1WGW',
+  projectId: 'catch-of-the-day-piotrwk-36eb1',
+  storageBucket: 'catch-of-the-day-piotrwk-36eb1.appspot.com',
+  messagingSenderId: '1058978518802',
+  appId: '1:1058978518802:web:d71729cfb839c27e71c5cb',
+  measurementId: 'G-G0EXED1WGW',
 });
 
 const base = Rebase.createClass(firebaseApp.database());
