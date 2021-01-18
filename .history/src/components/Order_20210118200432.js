@@ -45,7 +45,7 @@ const Order = (props) => {
             </TransitionGroup>
             lbs {fish.name}
             {formatPrice(count * fish.price)}
-            <button onClick={() => props.removeFromOrder(key)}>&times;</button>
+            <button onClick={() => props.removeFromOrder(key)}>&times</button>
           </span>
         </li>
       </CSSTransition>
