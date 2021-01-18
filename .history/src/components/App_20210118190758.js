@@ -23,11 +23,11 @@ class App extends Component {
 
     const localStorageRef = localStorage.getItem(params.storeId);
     console.log(localStorageRef);
-    if (localStorageRef) {
-      this.setState({
-        order: JSON.parse(localStorageRef),
-      });
-    }
+    // if (localStorageRef) {
+    //   this.setState({
+    //     order: JSON.parse(localStorageRef),
+    //   });
+    // }
     this.ref = base.syncState(`${params.storeId}/fishes`, {
       context: this,
       state: 'fishes',
@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    // consol e.log('updated');
+    console.log('updated');
     localStorage.setItem(
       this.props.match.params.storeId,
       JSON.stringify(this.state.order)

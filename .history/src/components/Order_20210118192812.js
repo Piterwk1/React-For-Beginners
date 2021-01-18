@@ -7,16 +7,18 @@ const Order = (props) => {
   const renderOrder = (key) => {
     const fish = props.fishes[key];
     const count = props.order[key];
-
+    // const isAvailable = fish.status === 'available';
     const isAvailable = fish && fish.status === 'available';
-
+    // with firebase
     const transitionOptions = {
       classNames: 'order',
       key,
       timeout: { enter: 500, exit: 500 },
     };
 
-    if (!fish) return null;
+    // with firebase
+    //  (!fish) return null;
+
     if (!isAvailable) {
       return (
         <CSSTransition
